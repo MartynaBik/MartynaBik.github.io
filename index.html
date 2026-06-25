@@ -1,0 +1,171 @@
+```html
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gimtadienio norų sąrašas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#faf8f5;
+    --card:#ffffff;
+    --text:#222;
+    --muted:#666;
+    --accent:#111;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --radius:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+.hero{
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
+    padding:80px 20px 50px;
+}
+
+.hero h1{
+    font-size:clamp(2rem,5vw,3.5rem);
+    margin-bottom:12px;
+}
+
+.hero p{
+    color:var(--muted);
+    max-width:600px;
+    margin:0 auto;
+}
+
+.container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+.card{
+    background:var(--card);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.25s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h2{
+    font-size:1.15rem;
+    margin-bottom:10px;
+}
+
+.content p{
+    color:var(--muted);
+    margin-bottom:18px;
+}
+
+.button{
+    display:inline-block;
+    text-decoration:none;
+    background:var(--accent);
+    color:white;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.footer{
+    text-align:center;
+    color:var(--muted);
+    padding:60px 20px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>🎁 Gimtadienio norų sąrašas</h1>
+    <p>
+        Jei norite prisidėti prie šventės dovana,
+        čia rasite keletą idėjų. Žinoma, svarbiausia – jūsų dalyvavimas!
+    </p>
+</section>
+
+<div class="container">
+    <div class="grid">
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?q=80&w=1200&auto=format&fit=crop" alt="">
+            <div class="content">
+                <h2>LEGO rinkinys</h2>
+                <p>Konstravimo rinkinys kūrybiškiems nuotykiams.</p>
+                <a class="button" href="https://example.com" target="_blank">
+                    Pirkti
+                </a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop" alt="">
+            <div class="content">
+                <h2>Dėlionė</h2>
+                <p>Lavina dėmesį ir kantrybę.</p>
+                <a class="button" href="https://example.com" target="_blank">
+                    Pirkti
+                </a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="">
+            <div class="content">
+                <h2>Sporto prekė</h2>
+                <p>Aktyviam laisvalaikiui.</p>
+                <a class="button" href="https://example.com" target="_blank">
+                    Pirkti
+                </a>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+<div class="footer">
+    Ačiū, kad švenčiate kartu ❤️
+</div>
+
+</body>
+</html>
+```
