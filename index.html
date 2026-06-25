@@ -111,6 +111,44 @@ body{
     color:var(--muted);
     padding:60px 20px;
 }
+
+
+.owned-section{
+    margin-top:80px;
+}
+
+.owned-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:1.6rem;
+}
+
+.owned-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+    gap:20px;
+}
+
+.owned-item{
+    text-align:center;
+}
+
+.owned-item img{
+    width:100%;
+    aspect-ratio:1;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+.owned-item span{
+    display:block;
+    margin-top:8px;
+    font-size:.9rem;
+    color:#666;
+}
+
+
+.price{ color:#666; margin:12px 0 18px; font-size:.95rem; } .product-link{ display:inline-flex; align-items:center; padding:10px 16px; border:1px solid #e5e5e5; border-radius:999px; background:#fafafa; color:#222; text-decoration:none; font-size:.92rem; font-weight:500; transition:all .2s ease; } .product-link:hover{ background:#f2f2f2; border-color:#d8d8d8; transform:translateY(-1px); }
 </style>
 </head>
 <body>
@@ -118,8 +156,7 @@ body{
 <section class="hero">
     <h1>🎁 Gimtadienio norų sąrašas</h1>
     <p>
-        Jei norite prisidėti prie šventės dovana,
-        čia rasite keletą idėjų. Žinoma, svarbiausia – jūsų dalyvavimas!
+        Dovanėlės. Ir turėkite minty, kad gal kitose parduotuvėse galima rasti pigiau!
     </p>
 </section>
 
@@ -127,39 +164,66 @@ body{
     <div class="grid">
 
         <article class="card">
-            <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?q=80&w=1200&auto=format&fit=crop" alt="">
+            <img src="https://sekuvaiku.lt/cdn/shop/files/2_a37d17fd-8cfd-44de-84f8-671459022a92.png?v=1760094328&width=1780?q=80&w=1200&auto=format&fit=crop" alt="">
             <div class="content">
-                <h2>LEGO rinkinys</h2>
-                <p>Konstravimo rinkinys kūrybiškiems nuotykiams.</p>
-                <a class="button" href="https://example.com" target="_blank">
-                    Pirkti
-                </a>
+                <h2>Saugi vaikiška tarka Kiddikutter</h2>
+                <div class="price"> Orientacinė kaina: €22-€28 </div>
+                <a class="product-link" href="https://sekuvaiku.lt/products/saugus-vaikiska-tarka-kiddikutter" target="_blank" > Peržiūrėti dovaną </a>
             </div>
         </article>
 
         <article class="card">
-            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop" alt="">
+            <img src="https://sekuvaiku.lt/cdn/shop/files/TickIt_padidinamasisstiklas_74.jpg?v=1685793425&width=1500?v=1760094328&width=1780?q=80&w=1200&auto=format&fit=crop" alt="">
             <div class="content">
-                <h2>Dėlionė</h2>
-                <p>Lavina dėmesį ir kantrybę.</p>
-                <a class="button" href="https://example.com" target="_blank">
-                    Pirkti
-                </a>
+                <h2>TickiT® Padidinimo stiklas</h2>
+                <div class="price"> Orientacinė kaina: €15 </div>
+                <a class="product-link" href="https://sekuvaiku.lt/products/padidinimo-stiklas-lengvai-laikomas?_pos=1&_sid=33eabf954&_ss=r" target="_blank" > Peržiūrėti dovaną </a>
             </div>
         </article>
 
         <article class="card">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="">
+            <img src="https://sekuvaiku.lt/cdn/shop/files/1_ffefa287-5df2-4bbe-9549-11c2bb94ef34.png?v=1759346790&width=1500?v=1685793425&width=1500?v=1760094328&width=1780?q=80&w=1200&auto=format&fit=crop" alt="">
             <div class="content">
-                <h2>Sporto prekė</h2>
-                <p>Aktyviam laisvalaikiui.</p>
-                <a class="button" href="https://example.com" target="_blank">
-                    Pirkti
-                </a>
+                <h2>Stapelstein Rainbow Set classic - balansavimo akmenukų rinkinys</h2>
+                <div class="price"> Orientacinė kaina: €178 </div>
+                <a class="product-link" href="https://sekuvaiku.lt/collections/stapelstein-akmenukai/products/stapelstein-rainbow-set-classic-balansavimo-akmenuku-rinkinys-vaivorykste-copy" target="_blank" > Peržiūrėti dovaną </a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://sekuvaiku.lt/cdn/shop/files/11_899f5c02-8023-4caa-b04d-76f05c0453db.png?v=1733409185&width=1780?&width=1500?v=1685793425&width=1500?v=1760094328&width=1780?q=80&w=1200&auto=format&fit=crop" alt="">
+            <div class="content">
+                <h2>Stapelstein Board - balansinė lenta</h2>
+                <div class="price"> Orientacinė kaina: €44 </div>
+                <a class="product-link" href="https://sekuvaiku.lt/collections/stapelstein-akmenukai/products/stapelstein-board-super-confetti-balansine-lenta" target="_blank" > Peržiūrėti dovaną </a>
             </div>
         </article>
 
     </div>
+
+    <section class="owned-section">
+        <h2>Jau suplanuota dovanoti</h2>
+
+        <div class="owned-grid">
+
+            <div class="owned-item">
+                <img src="https://m.media-amazon.com/images/I/71cfG3Qg3QL._AC_UF894,1000_QL80_.jpg" alt="">
+                <span>Konstruktorius plius-plius (Dovilė)</span>
+            </div>
+
+            <div class="owned-item">
+                <img src="https://new.ksd-images.lt/display?path=aikido%2Fstore%2F55f8d459714b7385782715002dc16699.jfif&op=resize&w=414&q=75" alt="">
+                <span>Brio tiltas traukinukui</span>
+            </div>
+
+            <div class="owned-item">
+                <img src="https://www.littlesteps.lv/cdn/shop/files/little-dutch-rotalu-koka-garaza-ar-auto-un-helikopteru.webp?v=1762440754" alt="">
+                <span>Little Dutch garažas</span>
+            </div>
+
+        </div>
+    </section>
+
 </div>
 
 <div class="footer">
